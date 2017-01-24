@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../randcolor/css/master.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="../randcolor/js/main.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
-  <title>Random Color</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../randcolor/css/master.css">
+    <link rel="stylesheet" href="../randcolor/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../randcolor/js/main.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <script src="https://use.fontawesome.com/e3949eff39.js"></script>
+    <title>Random Color Generator</title>
 </head>
+
 <body>
-  <span id="name">Random Color Generator</span>
-  <div class="content">
-<p id="colornumber"> </p>
-  </div>
-  <button class="btn" data-clipboard-target="#colornumber" >
+    <span id="name" class="animated fadeInLeftBig">Random Color Generator</span>
+    <div class="content animated fadeInUp">
+        <p id="colornumber"> </p>
+    </div>
+    <button class="btn animated fadeInUp" data-clipboard-target="#colornumber">
     Copy
 </button>
-  <footer>
-<div class="footer">
+<p id="help_key" class="animated slideInUp">Press Space Bar</p>
+    <footer>
+        <div class="footer">
+        <a href="https://github.com/Wockeez/randcolor">GitHub</a><i class="fa fa-github " aria-hidden="true"></i>
+        </div>
 
-</div>
-
-  </footer>
+    </footer>
 </body>
+
 </html>
