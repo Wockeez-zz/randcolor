@@ -31,6 +31,13 @@ function currentcolor() {
 }
 currentcolor();
 
+document.addEventListener('touchstart', function(event) {
+if (event.targetTouches.length == 1) {
+randcolor();
+currentcolor();
+}
+}, false);
+
 
 /*function debugcopy() {
     var clipboard = new Clipboard('.btn');
