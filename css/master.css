@@ -94,7 +94,7 @@ button, button:active, button:focus {
     font-family: "Roboto Light";
     font-size: 22px;
     left: 46%;
-    top: 55%;
+    top: 67%;
 }
 
 .footer a {
@@ -111,4 +111,14 @@ button, button:active, button:focus {
     position: absolute;
     top: 96%;
     left: 1%;
+}
+
+.rgbnumberwrap {
+  margin-left: -78px;
+}
+
+#rgbnumber {
+  font-family: "Roboto Thin";
+  font-size: 50px;
+  left: 20%;
 }

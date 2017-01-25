@@ -11,7 +11,7 @@ $(document).ready(function() {
         var randomcolor = hex + rand + rand2 + rand3 + rand4 + rand5 + rand6;
         document.getElementById('colornumber').innerText = randomcolor;
         $('body').css('background-color', randomcolor);
-        console.log(randomcolor);
+//        console.log(randomcolor);
     }
     randcolor();
 
@@ -19,12 +19,22 @@ $(document).ready(function() {
     $('body').on("keydown", function(event) {
         if (event.which == 32) {
             randcolor();
+            currentcolor();
             $('#help_key').fadeOut(500);
         }
     });
 
 
+function currentcolor() {
+  var currentcolor = $('body').css ('background-color');
+  document.getElementById('rgbnumber').innerText = currentcolor;
+}
+currentcolor();
 
+
+
+
+/*function debugcopy() {
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {
         console.info('Action:', e.action);
@@ -38,4 +48,6 @@ $(document).ready(function() {
         console.error('Action:', e.action);
         console.error('Trigger:', e.trigger);
     });
+  }
+debugcopy();*/
 });

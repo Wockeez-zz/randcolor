@@ -11,13 +11,16 @@
     <script src="../randcolor/js/main.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
     <script src="https://use.fontawesome.com/e3949eff39.js"></script>
-    <title>Random Color Generator</title>
+    <title>Random #HEX color generator</title>
 </head>
 
 <body>
-    <span id="name" class="animated fadeInLeftBig">Random Color Generator</span>
+    <span id="name" class="animated fadeInLeftBig">Random #HEX color generator</span>
     <div class="content animated fadeInUp">
         <p id="colornumber"> </p>
+      <div class="rgbnumberwrap">
+        <p id="rgbnumber"> </p>
+      </div>
     </div>
     <button class="btn animated fadeInUp" data-clipboard-target="#colornumber">
     Copy
@@ -26,6 +29,7 @@
     <footer>
         <div class="footer">
             <a class="animated fadeIn" href="https://github.com/Wockeez/randcolor">GitHub</a><i class="fa fa-github animated fadeIn" aria-hidden="true"></i>
+            <!--<a class="link animated fadeIn" href="#">RGB Generator</a> -->
         </div>
     </footer>
 </body>
