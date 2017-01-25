@@ -35,6 +35,7 @@ document.addEventListener('touchstart', function(event) {
 if (event.targetTouches.length == 1) {
 randcolor();
 currentcolor();
+$('#help_key').fadeOut(500);
 }
 }, false);
 
