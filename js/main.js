@@ -32,8 +32,6 @@ function currentcolor() {
 currentcolor();
 
 
-
-
 /*function debugcopy() {
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {
