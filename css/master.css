@@ -52,7 +52,7 @@ button {
     padding: 15px 78px;
     position: relative;
     text-transform: uppercase;
-    font-family: "Roboto Light";
+    font-family: "Roboto Regular";
 }
 
 button::before, button::after {
@@ -64,6 +64,7 @@ button::before, button::after {
 
 button:hover {
     color: #000;
+    font-family: "Roboto Regular"
 }
 
 .btn::after {
@@ -103,7 +104,7 @@ button, button:active, button:focus {
     font-family: "Roboto Light";
     position: absolute;
     top: 96%;
-    left: 2%;
+    left: 3%;
     font-size: 15px;
 }
 
