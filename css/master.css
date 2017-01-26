@@ -1,9 +1,11 @@
 @media screen and (min-width:100px) and (max-width:737px) {
   #colornumber {
     font-size: 25px;
+    margin-left: -35px;
   }
   #rgbnumber {
     font-size: 25px;
+    margin-left: -30px;
   }
   #name {
     font-size: 14px;
@@ -19,13 +21,20 @@
   }
   #help_key {
     font-size: 14px;
+    margin-left: -38px;
   }
   button {
     padding: 10px 50px;
     font-size: 10px;
-    left: 48%;
+    left: 40%;
   }
 
+}
+
+@media screen and (min-width: 100px) and (max-width:420px) {
+button {
+  display: none;
+}
 }
 
 @media screen and (min-width:738px) and (max-width:1920px) {
