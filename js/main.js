@@ -11,49 +11,43 @@ $(document).ready(function() {
         var randomcolor = hex + rand + rand2 + rand3 + rand4 + rand5 + rand6;
         document.getElementById('colornumber').innerText = randomcolor;
         $('body').css('background-color', randomcolor);
-//        console.log(randomcolor);
+        console.log(randomcolor);
+      /*  var currentcolor = $('body').css('background-color');
+        document.getElementById('rgbnumber').innerText = currentcolor;
+        console.log(currentcolor);*/
     }
     randcolor();
-
 
     $('body').on("keydown", function(event) {
         if (event.which == 32) {
             randcolor();
-            currentcolor();
-            $('#help_key').fadeOut(500);
+              $('#help_key').fadeOut(500);
         }
     });
 
 
-function currentcolor() {
-  var currentcolor = $('body').css ('background-color');
-  document.getElementById('rgbnumber').innerText = currentcolor;
-}
-currentcolor();
 
-document.addEventListener('touchstart', function(event) {
-if (event.targetTouches.length == 1) {
-randcolor();
-currentcolor();
-$('#help_key').fadeOut(500);
-}
-}, false);
+    document.addEventListener('touchstart', function(event) {
+        if (event.targetTouches.length == 1) {
+            randcolor();
+            $('#help_key').fadeOut(500);
+        }
+    }, false);
 
+    function debugcopy() {
+        var clipboard = new Clipboard('.btn');
+        clipboard.on('success', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
 
-/*function debugcopy() {
-    var clipboard = new Clipboard('.btn');
-    clipboard.on('success', function(e) {
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
+            e.clearSelection();
+        });
 
-        e.clearSelection();
-    });
-
-    clipboard.on('error', function(e) {
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-    });
-  }
-debugcopy();*/
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
+    }
+    debugcopy();
 });

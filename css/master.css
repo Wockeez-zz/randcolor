@@ -181,3 +181,7 @@ button, button:active, button:focus {
   font-family: "Roboto Thin";
   left: 20%;
 }
+
+body {
+  transition: 2s;
+}
