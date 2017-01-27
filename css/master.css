@@ -1,66 +1,65 @@
 @media screen and (min-width:100px) and (max-width:737px) {
-  #colornumber {
-    font-size: 25px;
-    margin-left: -35px;
-  }
-  #rgbnumber {
-    font-size: 25px;
-    margin-left: -30px;
-  }
-  #name {
-    font-size: 14px;
-  }
-  .content {
-    left: 50%;
-  }
-  .rgbnumberwrap {
-    margin-left: -45px;
-  }
-  .footer {
-    display: none;
-  }
-  #help_key {
-    font-size: 14px;
-    margin-left: -38px;
-  }
-  button {
-    padding: 10px 50px;
-    font-size: 10px;
-    left: 40%;
-  }
-
+    #colornumber {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    #rgbnumber {
+        font-size: 25px;
+        margin-left: -35px;
+    }
+    #name {
+        font-size: 14px;
+    }
+    .content {
+        left: 50%;
+    }
+    .rgbnumberwrap {
+        margin-left: -45px;
+    }
+    .footer {
+        display: none;
+    }
+    #help_key {
+        font-size: 14px;
+        margin-left: -38px;
+    }
+    button {
+        padding: 10px 50px;
+        font-size: 10px;
+        left: 40%;
+    }
 }
 
-@media screen and (min-width: 100px) and (max-width:420px) {
-button {
-  display: none;
-}
+@media screen and (min-width: 100px) and (max-width:480px) {
+    button {
+        display: none;
+    }
 }
 
 @media screen and (min-width:738px) and (max-width:1920px) {
-  #rgbnumber {
-    font-size: 50px;
-  }
-  #colornumber {
-    font-size: 50px;
-  }
-  #name {
-    font-size: 17px;
-  }
-  .content {
-    left: 45%;
-  }
-  .rgbnumberwrap {
-    margin-left: -78px;
-  }
-  button {
-    padding: 15px 78px;
-    font-size: 16px;
-    left: 45%;
-  }
-  #help_key {
-    font-size: 20px;
-  }
+    #rgbnumber {
+        font-size: 50px;
+    }
+    #colornumber {
+        font-size: 50px;
+    }
+    #name {
+        font-size: 17px;
+    }
+    .content {
+        left: 45%;
+    }
+    .rgbnumberwrap {
+        margin-left: -78px;
+    }
+    button {
+        padding: 15px 78px;
+        font-size: 16px;
+        left: 45%;
+    }
+    #help_key {
+        font-size: 20px;
+    }
 }
 
 @font-face {
@@ -90,7 +89,7 @@ button {
 .content {
     position: absolute;
     top: 45%;
-  /*  left: 45%; */
+    /*  left: 45%; */
 }
 
 button, button::after {
@@ -173,15 +172,16 @@ button, button:active, button:focus {
     left: 1%;
 }
 
+
 /*.rgbnumberwrap {
   margin-left: -78px;
 } */
 
 #rgbnumber {
-  font-family: "Roboto Thin";
-  left: 20%;
+    font-family: "Roboto Thin";
+    left: 20%;
 }
 
 body {
-  transition: 2s;
+    transition: 2s;
 }
