@@ -32,7 +32,7 @@ $(document).ready(function() {
   //  console.log(match);
     return ( rgbmassive[1] & 255 ) + ( rgbmassive[2] & 255 ) + ( rgbmassive[3] & 255 ) < 3 * 256 / 2;
 }
-    $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key').each(function() {
+    $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key, button').each(function() {
     $(this).css("color", colortext($(this).css("background-color")) ? 'white' : 'black');
 });
 

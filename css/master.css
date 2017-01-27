@@ -84,7 +84,7 @@
 
 #colornumber {
     font-family: "Roboto Thin";
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .content {
@@ -94,10 +94,10 @@
 }
 
 button, button::after {
-    -webkit-transition: all 0.3s;
+  /*  -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: all 0.3s; */
 }
 
 .btn {
@@ -114,10 +114,11 @@ button {
     position: relative;
     text-transform: uppercase;
     font-family: "Roboto Regular";
+    transition: 1s;
 }
 
 button::before, button::after {
-    background: #fff;
+    background: none;
     content: '';
     position: absolute;
     z-index: -1;
@@ -181,7 +182,7 @@ button, button:active, button:focus {
 #rgbnumber {
     font-family: "Roboto Thin";
     left: 20%;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 body {
