@@ -1,17 +1,27 @@
 $(document).ready(function() {
     function randcolor() {
-        var labelnumber = "ABCDEF0123456789";
+        var labelnumber = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
         var hex = "#";
-        var rand = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var rand2 = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var rand3 = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var rand4 = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var rand5 = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var rand6 = labelnumber.charAt(Math.floor(Math.random() * labelnumber.length));
-        var randomcolor = hex + rand + rand2 + rand3 + rand4 + rand5 + rand6;
+        var rand = Math.floor(Math.random() * labelnumber.length);
+        var rand2 = Math.floor(Math.random() * labelnumber.length);
+        var rand3 = Math.floor(Math.random() * labelnumber.length);
+        var rand4 = Math.floor(Math.random() * labelnumber.length);
+        var rand5 = Math.floor(Math.random() * labelnumber.length);
+        var rand6 = Math.floor(Math.random() * labelnumber.length);
+        var randmas = labelnumber[rand] + labelnumber[rand2] +  labelnumber[rand3] + labelnumber[rand4] + labelnumber[rand5] + labelnumber[rand6];
+      //  console.log(randmas);
+        var randomcolor = hex + randmas;
         document.getElementById('colornumber').innerText = randomcolor;
         $('body').css('background-color', randomcolor);
         console.log(randomcolor);
+
+        var hex1 = randomcolor.substr(1,6);
+        var bigint = parseInt(hex1, 16);
+        var r = (bigint >> 16) & 255;
+        var g = (bigint >> 8) & 255;
+        var b = bigint & 255;
+        var rgb = "rgb(" + r + "," + g + "," + b + ")";
+        document.getElementById('rgbnumber').innerText = rgb;
       /*  var currentcolor = $('body').css('background-color');
         document.getElementById('rgbnumber').innerText = currentcolor;
         console.log(currentcolor);*/
