@@ -31,7 +31,7 @@ $(document).ready(function() {
     $('body').on("keydown", function(event) {
         if (event.which == 32) {
             randcolor();
-              $('#help_key').fadeOut(500);
+              $('#help_key').fadeOut(700);
         }
     });
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
     document.addEventListener('touchstart', function(event) {
         if (event.targetTouches.length == 1) {
             randcolor();
-            $('#help_key').fadeOut(500);
+            $('#help_key').fadeOut(700);
         }
     }, false);
 
