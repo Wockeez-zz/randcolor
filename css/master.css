@@ -84,6 +84,7 @@
 
 #colornumber {
     font-family: "Roboto Thin";
+    transition: 0.5s;
 }
 
 .content {
@@ -180,6 +181,7 @@ button, button:active, button:focus {
 #rgbnumber {
     font-family: "Roboto Thin";
     left: 20%;
+    transition: 0.5s;
 }
 
 body {

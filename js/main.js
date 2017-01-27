@@ -25,8 +25,21 @@ $(document).ready(function() {
       /*  var currentcolor = $('body').css('background-color');
         document.getElementById('rgbnumber').innerText = currentcolor;
         console.log(currentcolor);*/
+
+        var rgbmassive = [r,g,b];
+        function colortext( color ) {
+    var match = rgbmassive;
+  //  console.log(match);
+    return ( rgbmassive[1] & 255 ) + ( rgbmassive[2] & 255 ) + ( rgbmassive[3] & 255 ) < 3 * 256 / 2;
+}
+    $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key').each(function() {
+    $(this).css("color", colortext($(this).css("background-color")) ? 'white' : 'black');
+});
+
     }
     randcolor();
+
+
 
     $('body').on("keydown", function(event) {
         if (event.which == 32) {
