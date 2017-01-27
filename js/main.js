@@ -8,14 +8,14 @@ $(document).ready(function() {
         var rand4 = Math.floor(Math.random() * labelnumber.length);
         var rand5 = Math.floor(Math.random() * labelnumber.length);
         var rand6 = Math.floor(Math.random() * labelnumber.length);
-        var randmas = labelnumber[rand] + labelnumber[rand2] +  labelnumber[rand3] + labelnumber[rand4] + labelnumber[rand5] + labelnumber[rand6];
-      //  console.log(randmas);
+        var randmas = hex + labelnumber[rand] + labelnumber[rand2] +  labelnumber[rand3] + labelnumber[rand4] + labelnumber[rand5] + labelnumber[rand6];
+        console.log(randmas);
         var randomcolor = hex + randmas;
-        document.getElementById('colornumber').innerText = randomcolor;
-        $('body').css('background-color', randomcolor);
-        console.log(randomcolor);
+        document.getElementById('colornumber').innerText = randmas;
+        $('body').css('background-color', randmas);
+        //console.log(randomcolor);
 
-        var hex1 = randomcolor.substr(1,6);
+        var hex1 = randmas.substr(1,6);
         var bigint = parseInt(hex1, 16);
         var r = (bigint >> 16) & 255;
         var g = (bigint >> 8) & 255;
