@@ -21,7 +21,7 @@
     }
     #help_key {
         font-size: 14px;
-        margin-left: -38px;
+        margin-left: -45px;
     }
     button {
         padding: 10px 50px;
@@ -207,4 +207,8 @@ body {
 
 #success {
   font-family: "Roboto Light";
+}
+
+#link {
+  transition: 1s;
 }

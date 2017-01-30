@@ -26,11 +26,11 @@ $(document).ready(function() {
         document.getElementById('rgbnumber').innerText = currentcolor;
         console.log(currentcolor);*/
 
-        var rgbmassive = [r,g,b];
+        var rgbarray = [r,g,b];
         function colortext( color ) {
-    var match = rgbmassive;
+    var match = rgbarray;
   //  console.log(match);
-    return ( rgbmassive[1] & 255 ) + ( rgbmassive[2] & 255 ) + ( rgbmassive[3] & 255 ) < 3 * 256 / 2;
+    return ( rgbarray[1] & 255 ) + ( rgbarray[2] & 255 ) + ( rgbarray[3] & 255 ) < 3 * 256 / 2;
 }
     $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key, button, #success').each(function() {
     $(this).css("color", colortext($(this).css("background-color")) ? 'white' : 'black');
