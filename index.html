@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../randcolor/css/master.css">
     <link rel="stylesheet" href="../randcolor/css/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="../randcolor/js/main.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
     <script src="https://use.fontawesome.com/e3949eff39.js"></script>
@@ -23,9 +25,10 @@
         <p id="rgbnumber"> </p>
       </div>
     </div>
-    <button class="btn animated fadeIn" data-clipboard-target="#colornumber">
+    <button class="btn animated fadeIn" data-clipboard-target="#colornumber" title="copied">
     Copy
 </button>
+<p id="success">Copied</p>
     <p id="help_key" class="animated slideInUp">Press Space Bar or Tap Display</p>
     <footer>
         <div class="footer">

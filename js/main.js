@@ -32,7 +32,7 @@ $(document).ready(function() {
   //  console.log(match);
     return ( rgbmassive[1] & 255 ) + ( rgbmassive[2] & 255 ) + ( rgbmassive[3] & 255 ) < 3 * 256 / 2;
 }
-    $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key, button').each(function() {
+    $('#colornumber, #rgbnumber, .btn:hover, .btn , #name, .link, #help_key, button, #success').each(function() {
     $(this).css("color", colortext($(this).css("background-color")) ? 'white' : 'black');
 });
 
@@ -45,10 +45,16 @@ $(document).ready(function() {
         if (event.which == 32) {
             randcolor();
               $('#help_key').fadeOut(700);
+      //        $('#success').fadeOut(500);
         }
     });
 
 
+  $('#success').hide();
+  $('.btn').on('click', function(success_true) {
+      $('#success').fadeIn(500);
+      $('#success').fadeOut(2000);
+  });
 
     document.addEventListener('touchstart', function(event) {
         if (event.targetTouches.length == 1) {
